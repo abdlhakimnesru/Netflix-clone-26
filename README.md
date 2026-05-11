@@ -1,6 +1,9 @@
+
+<img width="456" height="464" alt="image" src="https://github.com/user-attachments/assets/f4345359-fbe1-486a-8aab-3dbd15811111" />
+
+
 # 🎬 Netflix UI Clone (High-Fidelity)
 
-![Netflix Clone Screenshot](image_4fe9e8.jpg)
 
 A pixel-perfect, responsive frontend replica of the Netflix home interface. This project demonstrates advanced CSS architecture and modern JavaScript implementation.
 
