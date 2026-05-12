@@ -4,34 +4,53 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: transparent; */
   height: 10vh;
   color: white;
   transition: all 0.5s ease-in;
-  z-index: 1;
   transition-timing-function: ease-in;
-  /* background-color: red; */
+  z-index: 1000;
+  width: 100%;
 }
 
+/* Navbar Background on Scroll */
 .nav_black {
   background-color: rgb(20, 20, 20);
 }
 
+/* Main Container */
 .header_container {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header_left ul{
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.header_left ul {
   width: 140%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   cursor: pointer;
-  /* background-color: red; */
 }
+
+.header_left li {
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.header_left li:hover {
+  color: #b3b3b3;
+}
+
+/* =========================
+   RIGHT SECTION
+========================= */
+
 .header_right ul {
   width: 150%;
   display: flex;
@@ -39,4 +58,100 @@
   align-items: center;
   list-style: none;
   cursor: pointer;
+  gap: 15px;
+}
+
+.header_right li {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.header_right li:hover {
+  color: #b3b3b3;
+}
+
+/* =========================
+   TABLET DEVICES
+========================= */
+
+@media (max-width: 768px) {
+  .header_outer_container {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .header_container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header_left ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .header_left li {
+    font-size: 0.8rem;
+  }
+
+  .header_right ul {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* =========================
+   MOBILE DEVICES
+========================= */
+
+@media (max-width: 480px) {
+  .header_outer_container {
+    padding: 8px 0;
+  }
+
+  .header_container {
+    width: 95%;
+  }
+
+  .header_left ul {
+    gap: 8px;
+  }
+
+  .header_left li {
+    font-size: 0.7rem;
+  }
+
+  .header_left img {
+    width: 80px;
+  }
+
+  .header_right ul {
+    gap: 12px;
+  }
+
+  .header_right li {
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================
+   VERY SMALL SCREENS
+========================= */
+
+@media (max-width: 320px) {
+  .header_left li {
+    font-size: 0.6rem;
+  }
+
+  .header_left img {
+    width: 65px;
+  }
+
+  .header_right ul {
+    gap: 8px;
+  }
 }

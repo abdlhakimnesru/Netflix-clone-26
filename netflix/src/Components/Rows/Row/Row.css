@@ -8,6 +8,7 @@
   font-size: 1.4rem;
 }
 
+/* Posters container */
 .row_posters {
   display: flex;
   overflow-y: hidden;
@@ -21,6 +22,7 @@
   display: none;
 }
 
+/* Normal posters */
 .row_poster {
   object-fit: contain;
   width: 100%;
@@ -31,15 +33,75 @@
   cursor: pointer;
 }
 
+/* Hover effect */
 .row_poster:hover {
   transform: scale(1.08);
 }
 
-/* Large row (Netflix Originals style) */
+/* Large posters */
 .row_posterLarge {
   max-height: 250px;
 }
 
 .row_posterLarge:hover {
   transform: scale(1.09);
+}
+
+/* YouTube player spacing */
+.youtube_container {
+  padding: 20px;
+}
+
+/* =========================
+   Tablet Screens
+========================= */
+@media screen and (max-width: 768px) {
+  .row {
+    margin-left: 10px;
+  }
+
+  .row h2 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .row_posters {
+    padding: 10px;
+  }
+
+  .row_poster {
+    max-height: 100px;
+    margin-right: 8px;
+  }
+
+  .row_posterLarge {
+    max-height: 180px;
+  }
+}
+
+/* =========================
+   Mobile Screens
+========================= */
+@media screen and (max-width: 480px) {
+  .row {
+    margin-left: 5px;
+  }
+
+  .row h2 {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+
+  .row_posters {
+    padding: 8px;
+  }
+
+  .row_poster {
+    max-height: 80px;
+    margin-right: 6px;
+  }
+
+  .row_posterLarge {
+    max-height: 140px;
+  }
 }
